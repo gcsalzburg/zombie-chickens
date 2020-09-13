@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Zombie Chickens | Game</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="includes/css/layout.css" />
+<script src="includes/js/jquery.v1.6.js"></script>
+<script src="includes/js/layout.js"></script>
+<script>
+$.preLoadImages("images/icons/loading_lhs.gif","images/icons/loading_rhs.gif","images/layout/h1_about.png","images/layout/h1_game.png","images/layout/h1_highscores.png","images/layout/h1_title.png");
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+	<h1>Zombie Chickens</h1>
+	<div id="content">
+		<h2 id="highscores">Highscores</h2>
+        <p>Check on your progress against your friends on the highscore table below!</p>
+        <div id="left_arrow"><a href="#" id="left_arrow_link"></a></div>
+        <div id="scores_holder">
+            <div class="scores_list" id="left_list">
+             <!--   <?php
+                $_POST['start'] = 0;
+                include 'includes/scores/get_scores.php';
+                ?>-->
+            </div>
+            <div class="scores_list" id="right_list">
+              <!--   <?php
+                $_POST['start'] = 15;
+                include 'includes/scores/get_scores.php';
+                ?>	-->
+            </div>
+            <div class="clearboth"></div>
+        </div>
+        <div id="right_arrow" data-start="30"><a href="#" id="right_arrow_link"></a></div>
+        <script src="includes/js/highscores.js"></script>
+	</div>
+	<div id="nav">
+		<ul>
+			<li id="game"><a href="index.html">Play Zombie Chickens</a></li>
+			<li id="highscores" class="current"><a href="highscores.html">Highscores Table</a></li>
+			<li id="about"><a href="about.html">About Zombie Chickens</a></li>
+		</ul>
+	</div>
+	<div id="footer">
+		<div id="footer_large">Zombie Chickens artwork, graphics and concept copyright 2011: G.Cave, B.Selby, O.Williams</div>
+		<div id="footer_small"><a href="http://www.designedbycave.co.uk/?ref=zombiechickens" target="_blank"></a></div>
+	</div>
+</div>
+<div id="dev_banner"></div>
+</body>
+</html>

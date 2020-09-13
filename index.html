@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Zombie Chickens | Game</title>
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="includes/css/layout.css" />
+<script src="includes/js/jquery.v1.6.js"></script>
+<script src="includes/js/layout.js"></script>
+<script>
+$.preLoadImages("images/icons/loading_lhs.gif","images/icons/loading_rhs.gif","images/layout/h1_about.png","images/layout/h1_game.png","images/layout/h1_highscores.png","images/layout/h1_title.png");
+</script>
+</head>
+
+<body>
+<div id="wrapper">
+	<h1>Zombie Chickens</h1>
+	<div id="content">
+		<div id="splash_img">
+			<a href="#go" id="play_link"><img src="images/static/instructions_splash1.jpg" /></a>
+			<div id="turret_ani"><img src="images/static/turret_homepage.png" /></div>
+		</div>
+		<div id="game_div"><canvas id="canvas" width="850" height="530">Canvas not supported.</canvas></div>
+		
+		<div id="save_highscore">
+			<h2>Save Highscore</h2>
+			<p>Congratulations! Add your highscore of <strong id="score">0</strong> to the highscore table now!</p>
+			<form>
+				<input type="text" name="zc_username" id="zc_username" value="Enter your name" />
+			</form>
+			<p style="text-align:center;"><a href="#save" id="save_link">Save score!</a><span id="score_loading"><img src="images/icons/score_loading.gif" /></span></p>
+			<div id="close_button">
+				<a href="#close" id="close_link"><img src="images/icons/close.png" /></a>
+			</div>
+		</div>
+		
+		<script src="game/webcontent/utilities.js"></script>
+		<script src="game/webcontent/physics.js"></script>
+		<script src="game/webcontent/globals.js"></script>
+		<script src="game/webcontent/objects.js"></script>
+		<script src="game/webcontent/sounds.js"></script>
+		<script src="game/webcontent/buttonactions.js"></script>
+		<script src="game/webcontent/zc.js"></script>
+		<script src="includes/js/game.js"></script>
+	</div>
+	<div id="nav">
+		<ul>
+			<li id="game" class="current"><a href="index.html">Play Zombie Chickens</a></li>
+			<li id="highscores"><a href="highscores.html">Highscores Table</a></li>
+			<li id="about"><a href="about.html">About Zombie Chickens</a></li>
+		</ul>
+		
+		<div id="controls">
+			<a href="#sound" id="sound_link" class="sound_on"></a>
+			<!-- <a href="#reset" id="reset_link"></a>
+			<a href="#add" id="add_link"></a> -->
+		</div>
+	</div>
+	<div id="footer">
+		<div id="footer_large">Zombie Chickens artwork, graphics and concept copyright 2011: G.Cave, B.Selby, O.Williams</div>
+		<div id="footer_small"><a href="http://www.designedbycave.co.uk/?ref=zombiechickens" target="_blank"></a></div>
+	</div>
+</div>
+<div id="dev_banner"></div>
+</body>
+</html>
