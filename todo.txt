@@ -1,0 +1,14 @@
+Ben:
+
+- Get fog working again
+- Pause feature
+- 
+
+Owen:
+
+- Re-do hutches
+- New gun sound?
+
+George:
+
+- Fix duplicate high scores (possibly people spamming the save button?)

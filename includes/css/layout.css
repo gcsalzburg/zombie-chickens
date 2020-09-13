@@ -1,0 +1,172 @@
+/* GENERIC STYLES */
+
+IMG{border:none;}
+A{outline:none;}
+BODY{font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; color:#000;}
+P{margin:15px 10px;}
+.clearboth{clear:both;}
+
+/* GENERAL LAYOUT ELEMENTS */
+
+BODY{background: #B10505 url('../../images/layout/body_bg.jpg') no-repeat center top;}
+#wrapper{width:980px; margin:0 auto;}
+H1{
+	display:block;
+	width:260px;
+	height:27px;
+	margin:14px 0 0 604px;
+	text-indent:-9647px;
+	background: url('../../images/layout/h1_title.png') no-repeat left top;
+	padding:0;
+}
+H1.about{background-image: url('../../images/layout/h1_about.png');}
+H1.game{background-image: url('../../images/layout/h1_game.png');}
+H1.highscores{background-image: url('../../images/layout/h1_highscores.png');}
+
+#footer{display:block; height:46px; margin:0; padding:0; clear:both;}
+#footer_large{
+	width:579px;
+	height:15px;
+	margin:27px 0 0 2px;
+	text-indent:-9647px;
+	background: url('../../images/layout/footer_text2.png') no-repeat left top;
+	padding:0;
+	float:left;
+}
+#footer_small{width:37px; height:16px; float:left; margin: 29px 0 0 256px;}
+#footer_small A{
+	width:37px;
+	height:16px;
+	display:block;
+	margin:0;
+	padding:0;
+	background: url('../../images/layout/footer_logo.png') no-repeat left top;
+}
+#content{width:850px; height:530px; margin:26px 12px 0 13px; float:left; position:relative;}
+
+/* NAV MENU STYLES */
+
+#nav{float:left; width:100px; height:50px;}
+#nav UL{list-style:none; margin:35px 0 0 0; padding:0}
+#nav UL LI{display:block; height: 83px; margin:0 0 5px 0; background: url('../../images/menu/menu_bg.png') no-repeat right top; position:relative; width:75px; opacity:0.75;}
+#nav UL LI.current{width:95px; opacity:1;}
+#nav UL LI A{position:absolute; right:15px; top:0; text-indent: -9384px; width:60px; height:83px; background-repeat:no-repeat; background-position:right 15px;}
+#nav UL LI#game A{background-image:url('../../images/menu/game_icon.png'); background-position:right 8px;}
+#nav UL LI#highscores A{background-image:url('../../images/menu/scores_icon.png');}
+#nav UL LI#about A{background-image:url('../../images/menu/about_icon.png');}
+
+#sound_link{
+	width:32px;
+	height:34px;
+	background-repeat: no-repeat;
+	background-position:left top;
+	margin:10px 0 0 10px;
+	display:block;
+	float:left;
+	opacity:0.75;
+}
+.sound_off{background-image:url(../../images/icons/sound_off.png);}
+.sound_on{background-image:url(../../images/icons/sound_on.png);}
+#reset_link{
+	width:32px;
+	height:34px;
+	background:url(../../images/icons/reset_tank.png) no-repeat left top;
+	margin:10px 0 0 5px;
+	display:block;
+	float:left;
+	opacity:0.75;
+}
+#add_link{
+	width:32px;
+	height:34px;
+	background:url(../../images/icons/add.png) no-repeat left top;
+	margin:10px 0 0 26px;
+	display:block;
+	float:left;
+	opacity:0.75;
+}
+A#sound_link:hover, A#reset_link:hover, A#add_link:hover{opacity:1}
+/* A#sound_link:focus, A#reset_link:focus{background-position:left 2px} */
+
+/* GAME PAGE STYLES */
+#game_div, #splash_img{position:absolute; top:0; left:0; z-index:5; width:850px; height:530px;}
+#splash_img{z-index:10;}
+
+#save_highscore{
+	width:450px;
+	top:140px;
+	left:200px;
+	margin:0;
+	padding:0;
+	height:250px;
+	background:url(../../images/static/highscore_bg.png) no-repeat left top;
+	position:absolute;
+	z-index:15;
+	color:#FFFFFF;
+	display:none;
+}
+#save_highscore H2{display:block; text-indent:-9384px; width:204px; height:31px; margin:25px 0 0 123px; background:url(../../images/static/title_save_highscore.png) no-repeat;}
+#save_highscore P{margin:15px 25px}
+#save_highscore INPUT{background:none; width:260px; height:32px; line-height:28px; padding:2px; margin:5px 93px; color:#FFFFFF; text-align:center; border:1px solid #E8DCD7; font-size:18px;}
+#save_highscore INPUT.score_added{background:#C8EBC7; color:#000000; border:1px solid #A3EF69}
+#save_highscore INPUT.score_error{background:#EBC7C7; color:#000000; border:1px solid #EB4343}
+#save_highscore #save_link{font-weight:bold; text-align:center; font-size:18px; color:#FFFFFF}
+#close_button{position:absolute; right:0; top:0; width:32px; height:32px;}
+#close_link{opacity:0.75;}
+A#close_link:hover{opacity:1;}
+
+#score_loading{display:none;}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+  }
+}
+#turret_ani{
+	left:590px;
+	position:absolute;
+	top:237px;
+    -webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         10s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+
+/* PAGE TITLES */
+
+H2#about{display:block; height:41px; width:406px; background:url('../../images/static/title_about.png') no-repeat; margin:10px 0 0 10px; text-indent:-8594px;}
+H2#highscores{display:block; height:40px; width:285px; background:url('../../images/static/title_highscores.png') no-repeat; margin:10px 0 0 10px; text-indent:-9384px;}
+
+/* ABOUT PAGE */
+
+.mugshot{width:270px; margin:5px 0 0 10px; float:left;}
+.mugshot IMG{border-bottom:1px solid #EEE; width:270px; height:270px;}
+.mugshot P{margin:5px 0;}
+#owen{margin-right:0;}
+
+/* HIGHSCORES TABLE */
+
+#left_arrow, #right_arrow{float:left; width:36px; height:127px; margin:130px 10px 0 10px}
+#left_arrow A, #right_arrow A{display:block; margin:0; width:36px; height:127px; background: url('../../images/icons/arrow_left.png') no-repeat left top; opacity:0.75;}
+#left_arrow A:hover, #right_arrow A:hover{opacity:1;}
+
+#right_arrow A{background-image: url('../../images/icons/arrow_right.png');}
+
+#scores_holder{width:640px; float:left;}
+.scores_list{width:300px; margin:5px 10px 5px 10px; float:left}
+.scores_list TABLE{border-collapse:collapse; font-size:14px; width:300px}
+.scores_list TABLE THEAD TR{background-color:#2D1100;}
+.scores_list TH{font-weight:normal; text-align:left; color:#FFFFFF;}
+.scores_list TABLE TBODY TR TD:nth-child(1){border-right:1px solid #2D1100;}
+.scores_list TABLE TBODY TR TD:nth-child(2){border-right:1px solid #2D1100;}
+.scores_list TABLE TBODY TR TD, .scores_list TABLE THEAD TR TH{padding:2px;}
+
+.table_loading_lhs{width:300px; height:60px; background:url('../../images/icons/loading_lhs.gif') no-repeat center center;}
+.table_loading_rhs{width:300px; height:60px; background:url('../../images/icons/loading_rhs.gif') no-repeat center center;}
+
+/* DEV BANNER */
+#dev_banner{background:url(../../images/static/development_banner.png) no-repeat left top; width:300px; height:300px; position:absolute; top:0; left:0; z-index:100;}
