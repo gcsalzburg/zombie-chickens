@@ -1,3 +1,3 @@
 # zombie-chickens
 
-> ## Play here: https://www.designedbycave.co.uk/zombie-chickens/index.html 
+> ## Play: https://play.interactionmagic.com/zombie-chickens/
